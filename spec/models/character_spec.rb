@@ -18,9 +18,9 @@ describe Character do
     }
 
     hannah = Character.new(data)
-    expect(hannah.name).to eq data[:name]
-    expect(hannah.role).to eq data[:role]
-    expect(hannah.house).to eq data[:house]
+    expect(hannah.name).to eq data["name"]
+    expect(hannah.role).to eq data["role"]
+    expect(hannah.house).to eq data["house"]
     expect(hannah.patronus).to eq nil
   end
 end

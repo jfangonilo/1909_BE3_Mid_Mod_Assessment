@@ -2,9 +2,9 @@ class Character
   attr_reader :name, :role, :house, :patronus
 
   def initialize(data)
-    @name = data[:name]
-    @role = data[:role]
-    @house = data[:house]
-    @patronus = data[:patronus]
+    @name = data["name"]
+    @role = data["role"]
+    @house = data["house"]
+    @patronus = data["patronus"]
   end
 end
