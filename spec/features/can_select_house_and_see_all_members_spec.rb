@@ -5,6 +5,7 @@ feature "search for members by house and select Gryffindor" do
     visit "/"
 
     select "Gryffindor", from: :house
+    click_on "Search For Members"
 
     expect(current_path).to eq "/search"
 
