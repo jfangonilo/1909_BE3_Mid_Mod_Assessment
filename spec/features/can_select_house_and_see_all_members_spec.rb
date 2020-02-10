@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature "search for members by house and select Gryffindor" do
-  scenario "I see 21 members" do
+  scenario "I see the 21 members of the Order of the Phoenix" do
     visit "/"
 
     select "Gryffindor", from: :house
